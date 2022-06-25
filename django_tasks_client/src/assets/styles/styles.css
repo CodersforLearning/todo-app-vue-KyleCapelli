@@ -1,0 +1,162 @@
+body {
+
+}
+.tasks_container {
+    background-image: url(../../assets/bg-mobile-light.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(0, 0%, 98%);
+    height:100%;
+    padding: 40px 0;
+}
+.tasks_container_night {
+    background-color: hsl(235, 24%, 19%)
+}
+
+/* Header CSS */
+.tasks_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0 20px 20px;
+}
+
+.tasks_header h1 {
+    margin: 0;
+    padding-top: 8px;
+    color: hsl(0, 0%, 98%);
+    letter-spacing: 10px;
+}
+
+/* Create todo CSS */
+.add_task {
+    width: 85%;
+    text-align: left;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.darkmode {
+    background-color: hsl(237, 14%, 26%) !important;
+    color: hsl(0, 0%, 92%) !important;
+}
+.add_task form {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+}
+.add_task input {
+    border: 0;
+    width: 100%;
+    margin-top:2.8px;
+    background: transparent;
+}
+.add_task .input-text {
+    width: 100%;
+    margin-left: 13px;
+}
+.add_task button {
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+}
+.add_task div {
+    width: 20px;
+    height: 20px;
+}
+
+/* All Tasks Section */
+.tasks_content {
+    width: 85%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1)
+}
+.tasks_content ul {
+    border-radius: 5px;
+}
+
+
+/* Each individual task */
+.tasks_list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    border-bottom: 1px solid #cfcfcf;
+}
+.tasks_list .task_list-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+.tasks_list .task_list-checkbox {
+    border: 1px solid #cfcfcf;
+    border-radius: 50%;
+}
+.tasks_list .task_list-checkbox img {
+    padding-top: 6px;
+}
+.tasks_list button div {
+    width: 20px;
+    height: 20px;
+}
+.tasks_list .task_list-title {
+    padding: 2.8px 10px 0;
+    text-align: left;
+    color: hsl(235, 19%, 35%);
+    overflow-wrap: anywhere;
+}
+
+/* Task Information and Clear Completed button */
+.tasks_information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.tasks_information p,
+.tasks_information button{
+    color: hsl(236, 9%, 61%)
+}
+
+
+/* Sorting tasks section based on completed status */
+.tasks_sort {
+    width: 85%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1)
+}
+.tasks_sort .tasks_sort-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.tasks_sort {
+    font-weight: 700;
+    color:hsl(236, 9%, 61%);
+}
+.active{
+    color: hsl(220, 98%, 61%);
+}
+
+/* Drag and drop instructions text */
+.tasks_instructions {
+    color: hsl(236, 9%, 61%);
+    margin-bottom: 40px;
+}
